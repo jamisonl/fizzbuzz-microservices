@@ -1,0 +1,2 @@
+# How To Run
+To run this overwraught pile of services, start number-generation-service, divisibility-check-service and its three sub-services, divisible-by-3-service, divisible-by-5-service and divisible-by-15-service. Start string-mapping-service, and then curl localhost:3000/generate-numbers. This service will default to generating fizzbuzz for numbers 1-100, but you can pass params start and end. String mapping service logs the results. I'd add more services to collate the string mapping results, but I feel remorse already. Good luck running this, and happy fizzbuzzing. 
