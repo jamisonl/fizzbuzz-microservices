@@ -5,7 +5,7 @@ import { NumberGenerationService } from './app.service';
 export class NumberGenerationController {
   constructor(
     private readonly numberGenerationService: NumberGenerationService,
-  ) {}
+  ) { }
 
   @Get('generate-numbers')
   async generateNumbers(
@@ -20,6 +20,6 @@ export class NumberGenerationController {
     }
 
     await this.numberGenerationService.generateAndSendNumbers(startNum, endNum);
-    return 'Numbers generated and sent for processing.';
+    return `Numbers ${startNum}-${endNum} generated and sent for processing.`
   }
 }
